@@ -1,0 +1,23 @@
+{
+  "name": "minecraft-world-downgrader",
+  "version": "1.0.0",
+  "description": "Does its best to downgrade Minecraft worlds from 1.13 chunk format to Anvil chunk format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SliceThePi/minecraft-world-downgrader.git"
+  },
+  "author": "SliceThePi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SliceThePi/minecraft-world-downgrader/issues"
+  },
+  "homepage": "https://github.com/SliceThePi/minecraft-world-downgrader#readme",
+  "dependencies": {
+    "minecraft-data": "^2.34.0",
+    "prismarine-provider-anvil": "^2.1.0"
+  }
+}
