@@ -3,9 +3,10 @@ A Node.JS-based app to downgrade Minecraft worlds from 1.13 to 1.12.
 
 The file `nbt.js` was written by GitHub user [sjmulder](https://github.com/sjmulder/nbt-js) and modified to allow longArray values.
 
-The file `biome-mapping.json` is a mapping of 1.13 biome IDs to their closest 1.12 equivalent. I made it, and you can use it for whatever you like without providing credit as long as you don't claim that you're the one who created it.
+The file `biome-mapping.json` is a mapping of 1.13 biome IDs to their closest 1.12 equivalent, and likewise with `block-mapping.json` for blocks. I made these, and you can use them for whatever you like without providing credit as long as you don't claim that you're the one who created them.
 
 ## INSTALLATION
+This has only been tested with [Node.JS](https://nodejs.org/) 10.4.1 installed. No guarantees that it'll work with other versions. Actually, no guarantees that it'll work at all.
 ```
 git clone https://github.com/SliceThePi/minecraft-world-downgrader
 cd minecraft-world-downgrader
