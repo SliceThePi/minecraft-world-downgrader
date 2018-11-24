@@ -174,6 +174,8 @@ function removePalette(section) {
 }
 
 function downgradeChunk(oldChunk) {
+    if(Number(oldChunk.DataVersion) <= 1343)
+        return oldChunk;
     const oldLevel = oldChunk.Level;
     const newLevel = {};
     newLevel.xPos = oldLevel.xPos;
