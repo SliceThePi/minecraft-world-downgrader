@@ -118,6 +118,9 @@ function removePalette(section) {
         SkyLight: section.SkyLight,
     };
     
+    if(!section.BlockStates)
+        return section;
+    
     // each long is mapped to two ints by my API because of JavaScript's number limitations
     const ints = section.BlockStates.substring(1, section.BlockStates.length - 2).split(/[,;]/).map(x => Number(x));
     // section.Palette is always going to have at least one entry, so we don't need to do nbtCleaner.listLength
@@ -174,7 +177,7 @@ function removePalette(section) {
 }
 
 function downgradeChunk(oldChunk) {
-    if(Number(oldChunk.DataVersion) <= 1343)
+    if(Number((oldChunk.DataVersion + "").replace("i", "")) <= 1343)
         return oldChunk;
     const oldLevel = oldChunk.Level;
     const newLevel = {};
